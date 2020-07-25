@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const mongodb=require("mongodb");
 const bodyparser=require("body-parser");
-const url=""
+const url=process.env.DB;
 const app=express();
 app.use(bodyparser.json())
 
