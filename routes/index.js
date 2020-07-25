@@ -20,5 +20,9 @@ router.get('/', async function(req, res, next) {
   }
 });
 
+app.listen(process.env.PORT||3000,function(){
+  console.log("Server Listening");
+})
+
 
 module.exports = router;
